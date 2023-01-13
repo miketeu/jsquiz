@@ -11,8 +11,8 @@
 
   // Questions contain buttons for each answer.
 
-  
-/*
+
+/* Sample code from w3 working site.
 
     function clickRadioqui(elmnt) {
       var n, i, x;
