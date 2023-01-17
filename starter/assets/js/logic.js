@@ -11,6 +11,12 @@ document.querySelector("#start").addEventListener("click", function () {
   startTimer();
 
   //Get questions
+document.querySelector("#questions").addEventListener("click", function () {
+  document.querySelector("#start-screen").style.display = "block";
+  document.querySelector("#questions").style.display = "none";
+});
+
+
 });
 
 //Timer starts here
@@ -44,8 +50,13 @@ function checkSecond(sec) {
 
 //End timer.
 
+
+// Question section.
+
+document.querySelector("#question-title").textContent = questions[0].question;
+
 let choicesEl = document.querySelector("#choices");
-let questions = [
+let question = [
   {
     question: "This is question 1. Is it :-",
     answers: ["ex1", "ex2", "ex3", "ex4"],
@@ -67,11 +78,11 @@ choicesEl.addEventListener("click", function (event) {
   }
 });
 
-/*
+
 document.querySelector("#questions").addEventListener("click", function () {
   document.querySelector("#start-screen").style.display = "block";
   document.querySelector("#questions").style.display = "none";
 });
-*/
 
-//Timer
+
+
